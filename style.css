@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+  180deg,
+  #f7f1e8 0%,
+  #eee3d2 50%,
+  #e3d4be 100%
+);
+  color: #5c4434;
+  font-family: Garamond, serif;
+}
+
+.cover {
+    text-align: center;
+    animation: fade 1.5s;
+    background: #f7f0e4;
+    border: 2px solid #c8ab8c;
+    border-radius: 25px;
+    padding: 50px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+
+  background: #b4855a;
+  color: white;
+
+  padding: 15px 40px;
+  border-radius: 50px;
+
+  text-decoration: none;
+}
+.envelope {
+  width: 180px;
+  margin: 40px auto 0;
+  cursor: pointer;
+  transition: transform 0.8s ease;
+}
+
+.envelope.opening {
+  transform: scale(8);
+}
+
+.envelope img {
+  width: 100%;
+  display: block;
+}
+.cover {
+  text-align: center;
+  animation: fade 1.5s;
+  transition: transform 1s ease, opacity 1s ease;
+  transform-origin: center center;
+}
+
+.cover.zooming {
+  transform: scale(3);
+  opacity: 0;
+}
+.envelope:hover {
+  transform: scale(1.05);
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.surat
+{
+  background: #f8f2e8;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 35px 30px;
+  border-radius: 20px;
+  border: 1px solid #e0d5c6;
+  box-shadow:
+    0 5px 20px rgba(0,0,0,0.08),
+    inset 0 0 30px rgba(255,255,255,0.5);
+  animation: fade 1.5s;
+}
+
+.surat h2 {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #7a6046;
+}
+
+.surat h3 {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #5c4434;
+}
+
+.hiasan {
+  text-align: center;
+  font-size: 24px;
+  margin: 25px 0;
+  color: #a67c52;
+}
+
+.ttd {
+  margin-top: 40px;
+}
+.surat {
+  background: #f7f0e4;
+  max-width: 700px;
+  margin: 25px 20px;
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  animation: fade 1.5s;
+}
+
+.surat p {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #5c4434;
+}
+.zooming {
+  transform: scale(3);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+.nama,
+.ttdNama {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+}
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particles::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 220, 150, 0.9);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+
+  box-shadow:
+    5vw 10vh #ffe7b3,
+    12vw 20vh #ffe7b3,
+    20vw 5vh #ffe7b3,
+    25vw 30vh #ffe7b3,
+    35vw 15vh #ffe7b3,
+    40vw 50vh #ffe7b3,
+    48vw 25vh #ffe7b3,
+    55vw 12vh #ffe7b3,
+    62vw 40vh #ffe7b3,
+    70vw 18vh #ffe7b3,
+    75vw 60vh #ffe7b3,
+    82vw 28vh #ffe7b3,
+    90vw 8vh #ffe7b3,
+    10vw 70vh #ffe7b3,
+    18vw 85vh #ffe7b3,
+    28vw 75vh #ffe7b3,
+    38vw 90vh #ffe7b3,
+    50vw 78vh #ffe7b3,
+    60vw 88vh #ffe7b3,
+    72vw 82vh #ffe7b3,
+    85vw 92vh #ffe7b3,
+    95vw 70vh #ffe7b3;
+
+  animation: sparkle 3s ease-in-out infinite alternate;
+}
+@keyframes sparkle {
+  from {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(2);
+  }
+}
+.cover,
+.surat {
+  position: relative;
+  z-index: 1;
+}
+.fotoPage{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    padding:30px 15px;
+    text-align:center;
+}
+
+.journey{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    margin-bottom:25px;
+    animation:muncul .8s ease;
+}
+
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.penutup{
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding:40px 35px;
+    text-align:center;
+
+    background:#f8f2e8;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.12);
+
+    animation:fade 1s;
+}
+
+.penutup h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:30px;
+    color:#5c4434;
+    margin-top:-10px;
+}
+
+.penutup p{
+    font-size:17px;
+    line-height:1.8;
+    color:#5c4434;
+}
